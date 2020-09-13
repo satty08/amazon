@@ -13,16 +13,26 @@ function Home() {
             </div>
             <div className="home__row">
                 {/* Product */}
+                <Product 
+                    title="The lean Startup"
+                    price={29.99}
+                    image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+                    rating={3}
+                 />
+                {/* Product */}
+                <Product />
+            </div>
+            <div className="home__row">
+                {/* Product */}
                 <Product />
                 {/* Product */}
+                <Product />
+                {/* Product */}
+                <Product />
             </div>
             <div className="home__row">
                 {/* Product */}
-                {/* Product */}
-                {/* Product */}
-            </div>
-            <div className="home__row">
-                {/* Product */}
+                <Product />
             </div>
         </div>
     )
