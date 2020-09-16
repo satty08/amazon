@@ -13,6 +13,22 @@
     margin-right: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+    .home__row {
+        display: inline;
+    }
+
+    .home__row > Product {
+        margin-top: 200px;
+    }
+
+    .home__image {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 200px;
+    }
+}
+
 .home__image {
     width: 100%;
     z-index: -1;
