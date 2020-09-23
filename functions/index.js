@@ -1,7 +1,6 @@
 const functions = require('firebase-functions');
 const express = require('express');
 const cors = require('cors');
-const { response } = require('express');
 const stripe = require('stripe')('sk_test_51HScaQHS2v49aqM7UjfMnzzz6HVfJJj0UFz2N6zXCzoPMleIyj7mBGlkXNJb2wUDtGBl6IIqk3zgWGmA1CEDSmzM00iqEdLsgK')
 
 // API
@@ -22,8 +21,20 @@ app.post('/payments/create', async (request, response) => {
     console.log('Payment Request Received', total);
 
     const paymentIntent = await stripe.paymentIntents.create({
+        description: 'Electronic Goods',
+        shipping: {
+            name: 'Satty',
+            address: {
+                line1: '1887 Sector 29',
+                postal_code: '12108',
+                city: 'Faridabad',
+                state: 'Haryana',
+                country: 'India'
+            },
+        },
         amount: total, //subunits of the currency
-        currency: 'usd'
+        currency: 'inr',
+        payment_method_types: ['card']
     });
 
     // OK - Created
