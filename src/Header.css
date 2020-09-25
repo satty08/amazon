@@ -8,6 +8,12 @@
     z-index: 100;
 }
 
+@media only screen and (max-width: 600px){
+    .header{
+        width: max-content;
+    }
+}
+
 .header__logo {
     width: 100px;
     object-fit: contain;
