@@ -61,6 +61,29 @@ function Home() {
                     image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
                 />
             </div>
+            <div className="home__row">
+                <Product
+                    id="93747473"
+                    title="Alex Vando Mens Dress Shirts Regular Fit Long Sleeve Men Shirt"
+                    price={16.99}
+                    rating={4}
+                    image="https://images-na.ssl-images-amazon.com/images/I/71id%2BwwTw-L._AC_UX569_.jpg" 
+                />
+                <Product
+                    id="63849473"
+                    title="HP Envy x360 Convertible 15.6-inch Full HD Touchscreen, 10th gen Intel Core i7-10510U, 8GB DDR4 Memory, 512GB PCIe NVMe SSD, Natural Silver"
+                    price={839.00}
+                    rating={5}
+                    image="https://images-na.ssl-images-amazon.com/images/I/51CYVygZPZL._AC_SL1024_.jpg" 
+                />
+                <Product 
+                    id="47385748"
+                    title="AmazonBasics Small Digital Alarm Clock with Nightlight and Battery Backup, LED Display"
+                    price={9.99}
+                    rating={4}
+                    image="https://images-na.ssl-images-amazon.com/images/I/61j17FjPhtL._AC_SL1500_.jpg"
+                />
+            </div>
             </div>
         </div>
     )
